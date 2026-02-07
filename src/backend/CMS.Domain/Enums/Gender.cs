@@ -1,4 +1,4 @@
-namespace CMS.Domain.Entities;
+namespace CMS.Domain.Enums;
 
 public enum Gender
 {
