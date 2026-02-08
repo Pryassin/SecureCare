@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: src/backend/CMS.Api/Dockerfile
+    container_name: securecare_api
+    ports:
+      - "5000:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=database;Port=5432;Database=SecureCareDb;Username=postgres;Password=password
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - database
+
+  database:
+    image: postgres:15-alpine
+    container_name: securecare_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: SecureCareDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:
