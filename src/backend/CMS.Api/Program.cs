@@ -1,6 +1,7 @@
 using CMS.Infrastructure;
 using Scalar.AspNetCore; // Added for Scalar UI
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using CMS.Infrastructure.Persistence; 
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -38,9 +39,14 @@ builder.Services.AddAuthorization(options =>
 
 var app = builder.Build();
 
+// ... existing code ...
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    // Seed the database
+    DbInitializer.Seed(app.Services);
+
     app.UseSwagger(options =>
     {
         options.RouteTemplate = "openapi/{documentName}.json";
