@@ -1,0 +1,77 @@
+Summary
+  Generated on: 2/11/2026 - 5:06:20 PM
+  Coverage date: 2/11/2026 - 5:03:41 PM
+  Parser: Cobertura
+  Assemblies: 2
+  Classes: 53
+  Files: 43
+  Line coverage: 82.5%
+  Covered lines: 541
+  Uncovered lines: 114
+  Coverable lines: 655
+  Total lines: 1288
+  Branch coverage: 64.8% (61 of 94)
+  Covered branches: 61
+  Total branches: 94
+  Method coverage: 79.1% (152 of 192)
+  Full method coverage: 71.3% (137 of 192)
+  Covered methods: 152
+  Fully covered methods: 137
+  Total methods: 192
+
+CMS.Application                                                                                  91%
+  CMS.Application.Appointments.Commands.CancelAppointment.CancelAppointmentCommand              100%
+  CMS.Application.Appointments.Commands.CancelAppointment.CancelAppointmentCommandHandler      88.8%
+  CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentCommand              100%
+  CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentCommandHandler      90.4%
+  CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentValidator            100%
+  CMS.Application.Appointments.Queries.GetAppointmentById.AppointmentResponse                    50%
+  CMS.Application.Appointments.Queries.GetAppointmentById.GetAppointmentByIdQuery               100%
+  CMS.Application.Appointments.Queries.GetAppointmentById.GetAppointmentByIdQueryHandler        100%
+  CMS.Application.DependencyInjection                                                             0%
+  CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorCommand                             100%
+  CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorCommandHandler                     90.4%
+  CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorValidator                           100%
+  CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorCommand                             100%
+  CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorCommandHandler                     88.8%
+  CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorValidator                           100%
+  CMS.Application.Doctors.Queries.GetAllDoctors.GetAllDoctorsQuery                              100%
+  CMS.Application.Doctors.Queries.GetAllDoctors.GetAllDoctorsQueryHandler                       100%
+  CMS.Application.Doctors.Queries.GetDoctorById.DoctorResponse                                   60%
+  CMS.Application.Doctors.Queries.GetDoctorById.GetDoctorByIdQuery                              100%
+  CMS.Application.Doctors.Queries.GetDoctorById.GetDoctorByIdQueryHandler                       100%
+  CMS.Application.Patients.Commands.CreatePatient.CreatePatientCommand                          100%
+  CMS.Application.Patients.Commands.CreatePatient.CreatePatientCommandHandler                  92.8%
+  CMS.Application.Patients.Commands.CreatePatient.CreatePatientValidator                        100%
+  CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientCommand                          100%
+  CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientCommandHandler                  88.8%
+  CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientValidator                        100%
+  CMS.Application.Patients.Queries.GetAllPatients.GetAllPatientsQuery                           100%
+  CMS.Application.Patients.Queries.GetAllPatients.GetAllPatientsQueryHandler                    100%
+  CMS.Application.Patients.Queries.GetPatientById.GetPatientByIdQuery                           100%
+  CMS.Application.Patients.Queries.GetPatientById.GetPatientByIdQueryHandler                    100%
+  CMS.Application.Patients.Queries.GetPatientById.PatientResponse                              42.8%
+  CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionCommand           100%
+  CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionCommandHandler   92.8%
+  CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionValidator         100%
+  CMS.Application.Prescriptions.Queries.GetPrescriptionById.GetPrescriptionByIdQuery            100%
+  CMS.Application.Prescriptions.Queries.GetPrescriptionById.GetPrescriptionByIdQueryHandler     100%
+  CMS.Application.Prescriptions.Queries.GetPrescriptionById.PrescriptionResponse                 50%
+  CMS.Application.Users.Commands.Login.LoginCommand                                             100%
+  CMS.Application.Users.Commands.Login.LoginCommandHandler                                      100%
+  CMS.Application.Users.Commands.Login.LoginValidator                                           100%
+  CMS.Application.Users.Commands.RegisterUser.RegisterUserCommand                               100%
+  CMS.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler                       90.9%
+  CMS.Application.Users.Commands.RegisterUser.RegisterUserValidator                             100%
+
+CMS.Domain                                                                                     65.5%
+  CMS.Domain.Common.Error                                                                        75%
+  CMS.Domain.Common.Errors                                                                     13.6%
+  CMS.Domain.Common.Result                                                                     90.9%
+  CMS.Domain.Common.Result<T>                                                                  90.9%
+  CMS.Domain.Entities.Appointment                                                              70.5%
+  CMS.Domain.Entities.BaseEntity                                                               55.5%
+  CMS.Domain.Entities.Doctor                                                                   68.5%
+  CMS.Domain.Entities.Patient                                                                  83.7%
+  CMS.Domain.Entities.Prescription                                                               85%
+  CMS.Domain.Entities.User                                                                     45.7%

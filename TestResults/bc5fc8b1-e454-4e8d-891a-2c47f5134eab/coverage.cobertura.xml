@@ -1,0 +1,2976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.8159000000000001" branch-rate="0.6489" version="1.9" timestamp="1770851699" lines-covered="541" lines-valid="663" branches-covered="61" branches-valid="94">
+  <sources>
+    <source>D:\Clinic\SecureCare\src\backend\</source>
+  </sources>
+  <packages>
+    <package name="CMS.Application" line-rate="0.9107" branch-rate="0.8332999999999999" complexity="142">
+      <classes>
+        <class name="CMS.Application.DependencyInjection" filename="CMS.Application\DependencyInjection.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddApplication" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.RegisterUser.RegisterUserCommand" filename="CMS.Application\Users\Commands\RegisterUser\RegisterUserCommand.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Password" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Role" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,CMS.Domain.Enums.UserRole)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="14" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="10" hits="16" branch="False" />
+            <line number="7" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler" filename="CMS.Application\Users\Commands\RegisterUser\RegisterUserCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IUserRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Users\Commands\RegisterUser\RegisterUserCommandHandler.cs" line-rate="0.8823000000000001" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8823000000000001" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="36" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="281" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="36" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="281" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.RegisterUser.RegisterUserValidator" filename="CMS.Application\Users\Commands\RegisterUser\RegisterUserValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="False" />
+                <line number="9" hits="6" branch="False" />
+                <line number="10" hits="6" branch="False" />
+                <line number="11" hits="6" branch="False" />
+                <line number="12" hits="6" branch="False" />
+                <line number="14" hits="6" branch="False" />
+                <line number="15" hits="6" branch="False" />
+                <line number="16" hits="6" branch="False" />
+                <line number="18" hits="6" branch="False" />
+                <line number="19" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="6" branch="False" />
+            <line number="9" hits="6" branch="False" />
+            <line number="10" hits="6" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="12" hits="6" branch="False" />
+            <line number="14" hits="6" branch="False" />
+            <line number="15" hits="6" branch="False" />
+            <line number="16" hits="6" branch="False" />
+            <line number="18" hits="6" branch="False" />
+            <line number="19" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.Login.LoginCommand" filename="CMS.Application\Users\Commands\Login\LoginCommand.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Password" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="13" branch="False" />
+            <line number="8" hits="13" branch="False" />
+            <line number="6" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.Login.LoginCommandHandler" filename="CMS.Application\Users\Commands\Login\LoginCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IUserRepository,CMS.Application.Common.Interfaces.IJwtTokenGenerator)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="3" branch="False" />
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="3" branch="False" />
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.Login.LoginCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Users\Commands\Login\LoginCommandHandler.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="175" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="29" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="240" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="175" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="29" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="240" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Users.Commands.Login.LoginValidator" filename="CMS.Application\Users\Commands\Login\LoginValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+                <line number="8" hits="4" branch="False" />
+                <line number="9" hits="4" branch="False" />
+                <line number="10" hits="4" branch="False" />
+                <line number="11" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
+                <line number="14" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="4" branch="False" />
+            <line number="8" hits="4" branch="False" />
+            <line number="9" hits="4" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="11" hits="4" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="14" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Queries.GetPrescriptionById.GetPrescriptionByIdQuery" filename="CMS.Application\Prescriptions\Queries\GetPrescriptionById\GetPrescriptionByIdQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Queries.GetPrescriptionById.PrescriptionResponse" filename="CMS.Application\Prescriptions\Queries\GetPrescriptionById\GetPrescriptionByIdQuery.cs" line-rate="0.5" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AppointmentId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MedicationDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorNotes" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CreatedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.String,System.String,System.DateTimeOffset)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Queries.GetPrescriptionById.GetPrescriptionByIdQueryHandler" filename="CMS.Application\Prescriptions\Queries\GetPrescriptionById\GetPrescriptionByIdQueryHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IPrescriptionRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="False" />
+                <line number="12" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Queries.GetPrescriptionById.GetPrescriptionByIdQueryHandler/&lt;Handle&gt;d__2" filename="CMS.Application\Prescriptions\Queries\GetPrescriptionById\GetPrescriptionByIdQueryHandler.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="175" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="175" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionCommand" filename="CMS.Application\Prescriptions\Commands\CreatePrescription\CreatePrescriptionCommand.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_AppointmentId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="17" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MedicationDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorNotes" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="17" branch="False" />
+            <line number="8" hits="8" branch="False" />
+            <line number="9" hits="16" branch="False" />
+            <line number="6" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionCommandHandler" filename="CMS.Application\Prescriptions\Commands\CreatePrescription\CreatePrescriptionCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IPrescriptionRepository,CMS.Domain.Repositories.IAppointmentRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionCommandHandler/&lt;Handle&gt;d__4" filename="CMS.Application\Prescriptions\Commands\CreatePrescription\CreatePrescriptionCommandHandler.cs" line-rate="0.8946999999999999" branch-rate="0.8332999999999999" complexity="6">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8946999999999999" branch-rate="0.8332999999999999" complexity="6">
+              <lines>
+                <line number="26" hits="3" branch="False" />
+                <line number="27" hits="3" branch="False" />
+                <line number="29" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="41" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="236" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="51" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="324" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="57" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="3" branch="False" />
+            <line number="27" hits="3" branch="False" />
+            <line number="29" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="41" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="236" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="51" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="324" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="57" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Prescriptions.Commands.CreatePrescription.CreatePrescriptionValidator" filename="CMS.Application\Prescriptions\Commands\CreatePrescription\CreatePrescriptionValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="6" branch="False" />
+                <line number="8" hits="6" branch="False" />
+                <line number="9" hits="6" branch="False" />
+                <line number="11" hits="6" branch="False" />
+                <line number="12" hits="6" branch="False" />
+                <line number="13" hits="6" branch="False" />
+                <line number="15" hits="6" branch="False" />
+                <line number="16" hits="6" branch="False" />
+                <line number="17" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="6" branch="False" />
+            <line number="8" hits="6" branch="False" />
+            <line number="9" hits="6" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="12" hits="6" branch="False" />
+            <line number="13" hits="6" branch="False" />
+            <line number="15" hits="6" branch="False" />
+            <line number="16" hits="6" branch="False" />
+            <line number="17" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetPatientById.GetPatientByIdQuery" filename="CMS.Application\Patients\Queries\GetPatientById\GetPatientByIdQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetPatientById.PatientResponse" filename="CMS.Application\Patients\Queries\GetPatientById\GetPatientByIdQuery.cs" line-rate="0.4285" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NationalId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Phone" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EmergencyContact" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.String,System.DateTime,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="10" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetPatientById.GetPatientByIdQueryHandler" filename="CMS.Application\Patients\Queries\GetPatientById\GetPatientByIdQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IPatientRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetPatientById.GetPatientByIdQueryHandler/&lt;Handle&gt;d__2" filename="CMS.Application\Patients\Queries\GetPatientById\GetPatientByIdQuery.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="28" hits="2" branch="False" />
+                <line number="29" hits="2" branch="False" />
+                <line number="31" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="175" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="28" hits="2" branch="False" />
+            <line number="29" hits="2" branch="False" />
+            <line number="31" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="175" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetAllPatients.GetAllPatientsQuery" filename="CMS.Application\Patients\Queries\GetAllPatients\GetAllPatientsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetAllPatients.GetAllPatientsQueryHandler" filename="CMS.Application\Patients\Queries\GetAllPatients\GetAllPatientsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IPatientRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetAllPatients.GetAllPatientsQueryHandler/&lt;&gt;c" filename="CMS.Application\Patients\Queries\GetAllPatients\GetAllPatientsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;Handle&gt;b__2_0" signature="(CMS.Domain.Entities.Patient)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="3" branch="False" />
+                <line number="26" hits="3" branch="False" />
+                <line number="27" hits="3" branch="False" />
+                <line number="28" hits="3" branch="False" />
+                <line number="29" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="3" branch="False" />
+            <line number="26" hits="3" branch="False" />
+            <line number="27" hits="3" branch="False" />
+            <line number="28" hits="3" branch="False" />
+            <line number="29" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Queries.GetAllPatients.GetAllPatientsQueryHandler/&lt;Handle&gt;d__2" filename="CMS.Application\Patients\Queries\GetAllPatients\GetAllPatientsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientCommand" filename="CMS.Application\Patients\Commands\UpdatePatient\UpdatePatientCommand.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NationalId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Phone" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EmergencyContact" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="10" branch="False" />
+            <line number="8" hits="6" branch="False" />
+            <line number="9" hits="6" branch="False" />
+            <line number="10" hits="8" branch="False" />
+            <line number="6" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientCommandHandler" filename="CMS.Application\Patients\Commands\UpdatePatient\UpdatePatientCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IPatientRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Patients\Commands\UpdatePatient\UpdatePatientCommandHandler.cs" line-rate="0.8461" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8461" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="270" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="270" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.UpdatePatient.UpdatePatientValidator" filename="CMS.Application\Patients\Commands\UpdatePatient\UpdatePatientValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+                <line number="8" hits="4" branch="False" />
+                <line number="9" hits="4" branch="False" />
+                <line number="11" hits="4" branch="False" />
+                <line number="12" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+                <line number="17" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="4" branch="False" />
+            <line number="8" hits="4" branch="False" />
+            <line number="9" hits="4" branch="False" />
+            <line number="11" hits="4" branch="False" />
+            <line number="12" hits="4" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="17" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.CreatePatient.CreatePatientCommand" filename="CMS.Application\Patients\Commands\CreatePatient\CreatePatientCommand.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="19" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NationalId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Gender" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Phone" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EmergencyContact" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.DateTime,CMS.Domain.Enums.Gender,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="10" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="19" branch="False" />
+            <line number="9" hits="16" branch="False" />
+            <line number="10" hits="8" branch="False" />
+            <line number="11" hits="8" branch="False" />
+            <line number="12" hits="8" branch="False" />
+            <line number="13" hits="11" branch="False" />
+            <line number="7" hits="10" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.CreatePatient.CreatePatientCommandHandler" filename="CMS.Application\Patients\Commands\CreatePatient\CreatePatientCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IPatientRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="3" branch="False" />
+                <line number="14" hits="3" branch="False" />
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.CreatePatient.CreatePatientCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Patients\Commands\CreatePatient\CreatePatientCommandHandler.cs" line-rate="0.9129999999999999" branch-rate="0.8332999999999999" complexity="6">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.9129999999999999" branch-rate="0.8332999999999999" complexity="6">
+              <lines>
+                <line number="20" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="200" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="29" hits="2" branch="False" />
+                <line number="30" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="392" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="43" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="513" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="200" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="29" hits="2" branch="False" />
+            <line number="30" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="392" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="43" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="513" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Patients.Commands.CreatePatient.CreatePatientValidator" filename="CMS.Application\Patients\Commands\CreatePatient\CreatePatientValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="7" branch="False" />
+                <line number="8" hits="7" branch="False" />
+                <line number="9" hits="7" branch="False" />
+                <line number="11" hits="7" branch="False" />
+                <line number="12" hits="7" branch="False" />
+                <line number="13" hits="7" branch="False" />
+                <line number="15" hits="7" branch="False" />
+                <line number="16" hits="7" branch="False" />
+                <line number="18" hits="7" branch="False" />
+                <line number="19" hits="7" branch="False" />
+                <line number="20" hits="7" branch="False" />
+                <line number="22" hits="7" branch="False" />
+                <line number="23" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="7" branch="False" />
+            <line number="8" hits="7" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="11" hits="7" branch="False" />
+            <line number="12" hits="7" branch="False" />
+            <line number="13" hits="7" branch="False" />
+            <line number="15" hits="7" branch="False" />
+            <line number="16" hits="7" branch="False" />
+            <line number="18" hits="7" branch="False" />
+            <line number="19" hits="7" branch="False" />
+            <line number="20" hits="7" branch="False" />
+            <line number="22" hits="7" branch="False" />
+            <line number="23" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetDoctorById.GetDoctorByIdQuery" filename="CMS.Application\Doctors\Queries\GetDoctorById\GetDoctorByIdQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetDoctorById.DoctorResponse" filename="CMS.Application\Doctors\Queries\GetDoctorById\GetDoctorByIdQuery.cs" line-rate="0.6" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LicenseNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Specialization" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="9" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetDoctorById.GetDoctorByIdQueryHandler" filename="CMS.Application\Doctors\Queries\GetDoctorById\GetDoctorByIdQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IDoctorRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetDoctorById.GetDoctorByIdQueryHandler/&lt;Handle&gt;d__2" filename="CMS.Application\Doctors\Queries\GetDoctorById\GetDoctorByIdQuery.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="25" hits="2" branch="False" />
+                <line number="26" hits="2" branch="False" />
+                <line number="28" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="175" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="28" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="175" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetAllDoctors.GetAllDoctorsQuery" filename="CMS.Application\Doctors\Queries\GetAllDoctors\GetAllDoctorsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetAllDoctors.GetAllDoctorsQueryHandler" filename="CMS.Application\Doctors\Queries\GetAllDoctors\GetAllDoctorsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IDoctorRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetAllDoctors.GetAllDoctorsQueryHandler/&lt;&gt;c" filename="CMS.Application\Doctors\Queries\GetAllDoctors\GetAllDoctorsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;Handle&gt;b__2_0" signature="(CMS.Domain.Entities.Doctor)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="3" branch="False" />
+                <line number="26" hits="3" branch="False" />
+                <line number="27" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="3" branch="False" />
+            <line number="26" hits="3" branch="False" />
+            <line number="27" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Queries.GetAllDoctors.GetAllDoctorsQueryHandler/&lt;Handle&gt;d__2" filename="CMS.Application\Doctors\Queries\GetAllDoctors\GetAllDoctorsQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorCommand" filename="CMS.Application\Doctors\Commands\UpdateDoctor\UpdateDoctorCommand.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LicenseNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Specialization" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="10" branch="False" />
+            <line number="8" hits="6" branch="False" />
+            <line number="9" hits="12" branch="False" />
+            <line number="6" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorCommandHandler" filename="CMS.Application\Doctors\Commands\UpdateDoctor\UpdateDoctorCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IDoctorRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Doctors\Commands\UpdateDoctor\UpdateDoctorCommandHandler.cs" line-rate="0.8461" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8461" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="259" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="259" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.UpdateDoctor.UpdateDoctorValidator" filename="CMS.Application\Doctors\Commands\UpdateDoctor\UpdateDoctorValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+                <line number="8" hits="4" branch="False" />
+                <line number="9" hits="4" branch="False" />
+                <line number="11" hits="4" branch="False" />
+                <line number="12" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+                <line number="17" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="4" branch="False" />
+            <line number="8" hits="4" branch="False" />
+            <line number="9" hits="4" branch="False" />
+            <line number="11" hits="4" branch="False" />
+            <line number="12" hits="4" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="17" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorCommand" filename="CMS.Application\Doctors\Commands\CreateDoctor\CreateDoctorCommand.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="15" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LicenseNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Specialization" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="15" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="15" branch="False" />
+            <line number="8" hits="8" branch="False" />
+            <line number="9" hits="15" branch="False" />
+            <line number="6" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorCommandHandler" filename="CMS.Application\Doctors\Commands\CreateDoctor\CreateDoctorCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IDoctorRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Doctors\Commands\CreateDoctor\CreateDoctorCommandHandler.cs" line-rate="0.875" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.875" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="32" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="274" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="32" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="274" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Doctors.Commands.CreateDoctor.CreateDoctorValidator" filename="CMS.Application\Doctors\Commands\CreateDoctor\CreateDoctorValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="6" branch="False" />
+                <line number="8" hits="6" branch="False" />
+                <line number="9" hits="6" branch="False" />
+                <line number="11" hits="6" branch="False" />
+                <line number="12" hits="6" branch="False" />
+                <line number="13" hits="6" branch="False" />
+                <line number="15" hits="6" branch="False" />
+                <line number="16" hits="6" branch="False" />
+                <line number="17" hits="6" branch="False" />
+                <line number="18" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="6" branch="False" />
+            <line number="8" hits="6" branch="False" />
+            <line number="9" hits="6" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="12" hits="6" branch="False" />
+            <line number="13" hits="6" branch="False" />
+            <line number="15" hits="6" branch="False" />
+            <line number="16" hits="6" branch="False" />
+            <line number="17" hits="6" branch="False" />
+            <line number="18" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Queries.GetAppointmentById.GetAppointmentByIdQuery" filename="CMS.Application\Appointments\Queries\GetAppointmentById\GetAppointmentByIdQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Queries.GetAppointmentById.AppointmentResponse" filename="CMS.Application\Appointments\Queries\GetAppointmentById\GetAppointmentByIdQuery.cs" line-rate="0.5" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PatientId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateTime" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid,System.DateTimeOffset,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Queries.GetAppointmentById.GetAppointmentByIdQueryHandler" filename="CMS.Application\Appointments\Queries\GetAppointmentById\GetAppointmentByIdQueryHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IAppointmentRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="False" />
+                <line number="12" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Queries.GetAppointmentById.GetAppointmentByIdQueryHandler/&lt;Handle&gt;d__2" filename="CMS.Application\Appointments\Queries\GetAppointmentById\GetAppointmentByIdQueryHandler.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="175" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="175" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentCommand" filename="CMS.Application\Appointments\Commands\CreateAppointment\CreateAppointmentCommand.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_PatientId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateTime" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="17" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.DateTimeOffset)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="6" branch="False" />
+            <line number="8" hits="12" branch="False" />
+            <line number="9" hits="17" branch="False" />
+            <line number="6" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentCommandHandler" filename="CMS.Application\Appointments\Commands\CreateAppointment\CreateAppointmentCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IAppointmentRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Appointments\Commands\CreateAppointment\CreateAppointmentCommandHandler.cs" line-rate="0.875" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.875" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="20" hits="2" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="25" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="190" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="35" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="268" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="2" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="25" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="190" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="35" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="268" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CreateAppointment.CreateAppointmentValidator" filename="CMS.Application\Appointments\Commands\CreateAppointment\CreateAppointmentValidator.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+                <line number="8" hits="4" branch="False" />
+                <line number="9" hits="4" branch="False" />
+                <line number="10" hits="4" branch="False" />
+                <line number="12" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
+                <line number="14" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="4" branch="False" />
+            <line number="8" hits="4" branch="False" />
+            <line number="9" hits="4" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="12" hits="4" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="14" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CancelAppointment.CancelAppointmentCommand" filename="CMS.Application\Appointments\Commands\CancelAppointment\CancelAppointmentCommand.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CancelAppointment.CancelAppointmentCommandHandler" filename="CMS.Application\Appointments\Commands\CancelAppointment\CancelAppointmentCommandHandler.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CMS.Domain.Repositories.IAppointmentRepository,CMS.Domain.Repositories.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Application.Appointments.Commands.CancelAppointment.CancelAppointmentCommandHandler/&lt;Handle&gt;d__3" filename="CMS.Application\Appointments\Commands\CancelAppointment\CancelAppointmentCommandHandler.cs" line-rate="0.8461" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8461" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="186" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="248" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="186" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="248" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="2" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="CMS.Domain" line-rate="0.6327" branch-rate="0.45649999999999996" complexity="130">
+      <classes>
+        <class name="CMS.Domain.Common.Errors/User" filename="CMS.Domain\Common\Errors.cs" line-rate="0.3333" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_NotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_InvalidEmail" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AlreadyExists" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EmailRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PasswordRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_InvalidRole" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="4" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Errors/Doctor" filename="CMS.Domain\Common\Errors.cs" line-rate="0" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_NotFound" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AlreadyExists" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserIdRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LicenseRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SpecializationRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Errors/Appointment" filename="CMS.Domain\Common\Errors.cs" line-rate="0.2" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_PatientIdRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorIdRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PastDate" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Conflict" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NotFound" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Errors/Patient" filename="CMS.Domain\Common\Errors.cs" line-rate="0" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_NotFound" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AlreadyExists" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DuplicateNationalId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserIdRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NationalIdRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PhoneRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Errors/Prescription" filename="CMS.Domain\Common\Errors.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_NotFound" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="46" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_InvalidStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="47" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AppointmentIdRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MedicationDetailsRequired" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="49" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Errors/Auth" filename="CMS.Domain\Common\Errors.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_InvalidCredentials" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="54" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="54" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Error" filename="CMS.Domain\Common\Reseult.cs" line-rate="0.75" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Code" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="28" branch="False" />
+              </lines>
+            </method>
+            <method name="op_Implicit" signature="(CMS.Domain.Common.Error)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="1" branch="False" />
+                <line number="6" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="28" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="5" hits="1" branch="False" />
+            <line number="6" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Result" filename="CMS.Domain\Common\Reseult.cs" line-rate="0.909" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_IsSuccess" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="85" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Error" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_IsFailure" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Success" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="Failure" signature="(CMS.Domain.Common.Error)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="op_Implicit" signature="(CMS.Domain.Common.Error)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Boolean,CMS.Domain.Common.Error)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="59" branch="False" />
+                <line number="16" hits="59" branch="False" />
+                <line number="17" hits="59" branch="False" />
+                <line number="18" hits="59" branch="False" />
+                <line number="19" hits="59" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="85" branch="False" />
+            <line number="12" hits="10" branch="False" />
+            <line number="13" hits="24" branch="False" />
+            <line number="21" hits="7" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="15" hits="59" branch="False" />
+            <line number="16" hits="59" branch="False" />
+            <line number="17" hits="59" branch="False" />
+            <line number="18" hits="59" branch="False" />
+            <line number="19" hits="59" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Common.Result`1" filename="CMS.Domain\Common\Reseult.cs" line-rate="0.909" branch-rate="0.5" complexity="7">
+          <methods>
+            <method name="get_Value" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="34" hits="46" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="6" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="46" branch="False" />
+                <line number="36" hits="46" branch="False" />
+              </lines>
+            </method>
+            <method name="Success" signature="(T)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="44" hits="36" branch="False" />
+              </lines>
+            </method>
+            <method name="Failure" signature="(CMS.Domain.Common.Error)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="op_Implicit" signature="(T)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="47" hits="36" branch="False" />
+              </lines>
+            </method>
+            <method name="op_Implicit" signature="(CMS.Domain.Common.Error)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(T,System.Boolean,CMS.Domain.Common.Error)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="49" branch="False" />
+                <line number="40" hits="49" branch="False" />
+                <line number="41" hits="49" branch="False" />
+                <line number="42" hits="49" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="34" hits="46" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="6" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="35" hits="46" branch="False" />
+            <line number="36" hits="46" branch="False" />
+            <line number="44" hits="36" branch="False" />
+            <line number="45" hits="13" branch="False" />
+            <line number="47" hits="36" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="39" hits="49" branch="False" />
+            <line number="40" hits="49" branch="False" />
+            <line number="41" hits="49" branch="False" />
+            <line number="42" hits="49" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Entities.BaseEntity" filename="CMS.Domain\Common\BaseEntity.cs" line-rate="0.5555" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="8" hits="24" branch="False" />
+                <line number="9" hits="24" branch="False" />
+                <line number="11" hits="24" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="20" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="12" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="42" branch="False" />
+            <line number="8" hits="24" branch="False" />
+            <line number="9" hits="24" branch="False" />
+            <line number="11" hits="24" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="20" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="12" hits="24" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Entities.Appointment" filename="CMS.Domain\Entities\Appointment.cs" line-rate="0.7058" branch-rate="0.375" complexity="18">
+          <methods>
+            <method name="get_PatientId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Patient" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Doctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateTime" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Prescriptions" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(System.Guid,System.Guid,System.DateTimeOffset)" line-rate="0.6666" branch-rate="0.5" complexity="6">
+              <lines>
+                <line number="33" hits="5" branch="False" />
+                <line number="34" hits="5" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="0" branch="False" />
+                <line number="37" hits="5" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="42" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="0" branch="False" />
+                <line number="40" hits="5" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="70" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="0" branch="False" />
+                <line number="43" hits="5" branch="False" />
+                <line number="44" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="UpdateStatus" signature="(CMS.Domain.Enums.AppointmentStatus)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="47" hits="2" branch="False" />
+                <line number="49" hits="2" branch="False" />
+                <line number="50" hits="2" branch="False" />
+                <line number="51" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="Reschedule" signature="(System.DateTimeOffset)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="56" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.Guid,System.DateTimeOffset)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="5" branch="False" />
+                <line number="25" hits="5" branch="False" />
+                <line number="26" hits="5" branch="False" />
+                <line number="27" hits="5" branch="False" />
+                <line number="28" hits="5" branch="False" />
+                <line number="29" hits="5" branch="False" />
+                <line number="30" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="7" branch="False" />
+            <line number="9" hits="5" branch="False" />
+            <line number="12" hits="7" branch="False" />
+            <line number="13" hits="5" branch="False" />
+            <line number="15" hits="6" branch="False" />
+            <line number="16" hits="12" branch="False" />
+            <line number="18" hits="5" branch="False" />
+            <line number="33" hits="5" branch="False" />
+            <line number="34" hits="5" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="14" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="35" hits="0" branch="False" />
+            <line number="37" hits="5" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="42" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="38" hits="0" branch="False" />
+            <line number="40" hits="5" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="70" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="41" hits="0" branch="False" />
+            <line number="43" hits="5" branch="False" />
+            <line number="44" hits="5" branch="False" />
+            <line number="47" hits="2" branch="False" />
+            <line number="49" hits="2" branch="False" />
+            <line number="50" hits="2" branch="False" />
+            <line number="51" hits="2" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="14" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="56" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="24" hits="5" branch="False" />
+            <line number="25" hits="5" branch="False" />
+            <line number="26" hits="5" branch="False" />
+            <line number="27" hits="5" branch="False" />
+            <line number="28" hits="5" branch="False" />
+            <line number="29" hits="5" branch="False" />
+            <line number="30" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Entities.Doctor" filename="CMS.Domain\Entities\Doctor.cs" line-rate="0.6857" branch-rate="0.5" complexity="17">
+          <methods>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LicenseNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="19" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Specialization" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Appointments" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(System.Guid,System.String,System.String)" line-rate="0.5" branch-rate="0.5" complexity="6">
+              <lines>
+                <line number="26" hits="6" branch="False" />
+                <line number="27" hits="6" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="32" hits="6" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="38" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="37" hits="6" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="62" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="42" hits="6" branch="False" />
+                <line number="43" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.String,System.String)" line-rate="0.6363" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="52" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="33" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="57" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="6" branch="False" />
+                <line number="19" hits="6" branch="False" />
+                <line number="20" hits="6" branch="False" />
+                <line number="21" hits="6" branch="False" />
+                <line number="22" hits="6" branch="False" />
+                <line number="23" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="10" branch="False" />
+            <line number="7" hits="6" branch="False" />
+            <line number="8" hits="19" branch="False" />
+            <line number="9" hits="18" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="26" hits="6" branch="False" />
+            <line number="27" hits="6" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="14" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="32" hits="6" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="38" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="37" hits="6" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="62" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="42" hits="6" branch="False" />
+            <line number="43" hits="6" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="9" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="52" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="33" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="57" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="18" hits="6" branch="False" />
+            <line number="19" hits="6" branch="False" />
+            <line number="20" hits="6" branch="False" />
+            <line number="21" hits="6" branch="False" />
+            <line number="22" hits="6" branch="False" />
+            <line number="23" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Entities.Patient" filename="CMS.Domain\Entities\Patient.cs" line-rate="0.8378" branch-rate="0.5" complexity="20">
+          <methods>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_NationalId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="21" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Gender" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Phone" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="19" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EmergencyContact" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Appointments" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(System.Guid,System.String,System.DateTime,CMS.Domain.Enums.Gender,System.String,System.String)" line-rate="0.6666" branch-rate="0.5" complexity="6">
+              <lines>
+                <line number="33" hits="7" branch="False" />
+                <line number="34" hits="7" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="0" branch="False" />
+                <line number="37" hits="7" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="37" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="0" branch="False" />
+                <line number="40" hits="7" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="61" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="0" branch="False" />
+                <line number="43" hits="7" branch="False" />
+                <line number="44" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.String,System.String,System.String)" line-rate="0.8" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="0" branch="False" />
+                <line number="51" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="32" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="52" hits="0" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.DateTime,CMS.Domain.Enums.Gender,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="7" branch="False" />
+                <line number="23" hits="7" branch="False" />
+                <line number="24" hits="7" branch="False" />
+                <line number="25" hits="7" branch="False" />
+                <line number="26" hits="7" branch="False" />
+                <line number="27" hits="7" branch="False" />
+                <line number="28" hits="7" branch="False" />
+                <line number="29" hits="7" branch="False" />
+                <line number="30" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="11" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="10" hits="21" branch="False" />
+            <line number="11" hits="10" branch="False" />
+            <line number="12" hits="7" branch="False" />
+            <line number="13" hits="19" branch="False" />
+            <line number="14" hits="12" branch="False" />
+            <line number="16" hits="7" branch="False" />
+            <line number="33" hits="7" branch="False" />
+            <line number="34" hits="7" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="14" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="35" hits="0" branch="False" />
+            <line number="37" hits="7" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="37" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="38" hits="0" branch="False" />
+            <line number="40" hits="7" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="61" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="41" hits="0" branch="False" />
+            <line number="43" hits="7" branch="False" />
+            <line number="44" hits="7" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="9" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="49" hits="0" branch="False" />
+            <line number="51" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="32" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="52" hits="0" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="22" hits="7" branch="False" />
+            <line number="23" hits="7" branch="False" />
+            <line number="24" hits="7" branch="False" />
+            <line number="25" hits="7" branch="False" />
+            <line number="26" hits="7" branch="False" />
+            <line number="27" hits="7" branch="False" />
+            <line number="28" hits="7" branch="False" />
+            <line number="29" hits="7" branch="False" />
+            <line number="30" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Entities.Prescription" filename="CMS.Domain\Entities\Prescription.cs" line-rate="0.85" branch-rate="0.5" complexity="11">
+          <methods>
+            <method name="get_AppointmentId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Appointment" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MedicationDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DoctorNotes" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CreatedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(System.Guid,System.String,System.String)" line-rate="0.7142000000000001" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="26" hits="2" branch="False" />
+                <line number="27" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="14" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="0" branch="False" />
+                <line number="30" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="37" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="31" hits="0" branch="False" />
+                <line number="33" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="4" branch="False" />
+            <line number="8" hits="2" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="10" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="27" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="14" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="28" hits="0" branch="False" />
+            <line number="30" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="37" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="31" hits="0" branch="False" />
+            <line number="33" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="17" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CMS.Domain.Entities.User" filename="CMS.Domain\Entities\User.cs" line-rate="0.4571" branch-rate="0.3" complexity="16">
+          <methods>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PasswordHash" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Role" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_IsActive" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(System.String,System.String,CMS.Domain.Enums.UserRole)" line-rate="0.5" branch-rate="0.5" complexity="6">
+              <lines>
+                <line number="22" hits="4" branch="False" />
+                <line number="23" hits="4" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="27" hits="4" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="33" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="31" hits="4" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="75" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="4" branch="False" />
+                <line number="37" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.String,CMS.Domain.Enums.UserRole,System.Boolean)" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="40" hits="0" branch="False" />
+                <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="47" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="51" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String,CMS.Domain.Enums.UserRole)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="4" branch="False" />
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+                <line number="17" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+                <line number="19" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="9" branch="False" />
+            <line number="8" hits="10" branch="False" />
+            <line number="9" hits="5" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="22" hits="4" branch="False" />
+            <line number="23" hits="4" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="9" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="27" hits="4" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="33" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="31" hits="4" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="75" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="4" branch="False" />
+            <line number="37" hits="4" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="9" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="47" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="51" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="14" hits="4" branch="False" />
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="17" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="19" hits="4" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

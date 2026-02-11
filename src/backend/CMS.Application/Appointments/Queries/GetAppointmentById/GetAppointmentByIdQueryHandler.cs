@@ -18,7 +18,7 @@ public class GetAppointmentByIdQueryHandler : IRequestHandler<GetAppointmentById
         var appointment = await _appointmentRepository.GetByIdAsync(request.Id, cancellationToken);
         if (appointment is null)
         {
-            return (Result<AppointmentResponse>)Result.Failure(new Error("Appointment.NotFound", "Appointment not found."));
+            return Result<AppointmentResponse>.Failure(new Error("Appointment.NotFound", "Appointment not found."));
         }
 
         return new AppointmentResponse(
