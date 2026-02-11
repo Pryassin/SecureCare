@@ -1,4 +1,5 @@
 using CMS.Infrastructure;
+using CMS.Application;
 using Scalar.AspNetCore; // Added for Scalar UI
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using CMS.Infrastructure.Persistence; 
@@ -8,6 +9,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddControllers();

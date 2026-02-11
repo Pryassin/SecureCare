@@ -25,6 +25,7 @@ public static class Errors
         public static Error PatientIdRequired => new("Appointment.PatientIdRequired", "A valid Patient ID is required.");
         public static Error DoctorIdRequired => new("Appointment.DoctorIdRequired", "A valid Doctor ID is required.");
         public static Error PastDate => new("Appointment.PastDate", "Appointment date cannot be in the past.");
+        public static Error Conflict => new("Appointment.Conflict", "The selected time slot is already booked.");
     }
 
     public static class Patient

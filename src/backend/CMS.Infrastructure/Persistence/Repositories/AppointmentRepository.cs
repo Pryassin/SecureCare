@@ -1,4 +1,5 @@
 using CMS.Domain.Entities;
+using CMS.Domain.Enums;
 using CMS.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,5 +27,20 @@ public class AppointmentRepository : Repository<Appointment>, IAppointmentReposi
     public async Task<List<Appointment>> GetByPatientIdAsync(Guid patientId, CancellationToken cancellationToken = default)
     {
         return await _context.Appointments.Where(a => a.PatientId == patientId).ToListAsync(cancellationToken);
+    }
+
+    public async Task<bool> IsDoctorAvailableAsync(Guid doctorId, DateTimeOffset dateTime, CancellationToken cancellationToken = default)
+    {
+        // Simple 30-minute slot check logic for demonstration.
+        // In a real app, you might have variable durations.
+        var endTime = dateTime.AddMinutes(30);
+
+        return !await _context.Appointments
+            .AnyAsync(a => 
+                a.DoctorId == doctorId &&
+                a.Status != AppointmentStatus.Cancelled &&
+                a.DateTime < endTime && 
+                a.DateTime.AddMinutes(30) > dateTime,
+                cancellationToken);
     }
 }
