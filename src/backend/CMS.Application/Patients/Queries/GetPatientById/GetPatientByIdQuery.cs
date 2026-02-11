@@ -30,7 +30,7 @@ public class GetPatientByIdQueryHandler : IRequestHandler<GetPatientByIdQuery, R
         
         if (patient is null)
         {
-            return (Result<PatientResponse>)Result.Failure(Errors.User.NotFound); // Or generic NotFound error
+            return Result<PatientResponse>.Failure(Errors.User.NotFound); // Or generic NotFound error
         }
 
         var response = new PatientResponse(

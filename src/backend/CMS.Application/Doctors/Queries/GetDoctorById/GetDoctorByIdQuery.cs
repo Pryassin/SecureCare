@@ -27,7 +27,7 @@ public class GetDoctorByIdQueryHandler : IRequestHandler<GetDoctorByIdQuery, Res
         
         if (doctor is null)
         {
-            return (Result<DoctorResponse>)Result.Failure(Errors.User.NotFound);
+            return Result<DoctorResponse>.Failure(Errors.User.NotFound);
         }
 
         var response = new DoctorResponse(

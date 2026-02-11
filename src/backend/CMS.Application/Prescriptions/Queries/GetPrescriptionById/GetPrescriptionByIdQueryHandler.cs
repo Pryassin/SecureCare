@@ -18,7 +18,7 @@ public class GetPrescriptionByIdQueryHandler : IRequestHandler<GetPrescriptionBy
         var prescription = await _prescriptionRepository.GetByIdAsync(request.Id, cancellationToken);
         if (prescription is null)
         {
-            return (Result<PrescriptionResponse>)Result.Failure(new Error("Prescription.NotFound", "Prescription not found."));
+            return Result<PrescriptionResponse>.Failure(new Error("Prescription.NotFound", "Prescription not found."));
         }
 
         return new PrescriptionResponse(
