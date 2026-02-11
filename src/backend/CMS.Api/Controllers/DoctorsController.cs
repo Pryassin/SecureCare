@@ -1,78 +1,74 @@
 using CMS.Application.Doctors.Commands.CreateDoctor;
 using CMS.Application.Doctors.Commands.UpdateDoctor;
-using CMS.Application.Doctors.Queries.GetDoctorById;
 using CMS.Application.Doctors.Queries.GetAllDoctors;
+using CMS.Application.Doctors.Queries.GetDoctorById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-public class DoctorsController : ControllerBase
+public class DoctorsController : ApiController
 {
-    private readonly ISender _sender;
-
-    public DoctorsController(ISender sender)
+    public DoctorsController(ISender sender) : base(sender)
     {
-        _sender = sender;
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> CreateDoctor([FromBody] CreateDoctorCommand command)
-    {
-        var result = await _sender.Send(command);
-
-        if (result.IsFailure)
-        {
-            return BadRequest(result.Error);
-        }
-
-        return CreatedAtAction(nameof(GetDoctor), new { id = result.Value }, result.Value);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateDoctor(Guid id, [FromBody] UpdateDoctorCommand command)
-    {
-        if (id != command.Id)
-        {
-            return BadRequest("The ID in the URL does not match the ID in the body.");
-        }
-
-        var result = await _sender.Send(command);
-
-        if (result.IsFailure)
-        {
-            return BadRequest(result.Error);
-        }
-
-        return NoContent();
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetDoctor(Guid id)
+    public async Task<IActionResult> GetDoctor(Guid id, CancellationToken cancellationToken)
     {
         var query = new GetDoctorByIdQuery(id);
-        var result = await _sender.Send(query);
+        var result = await _sender.Send(query, cancellationToken);
 
         if (result.IsFailure)
         {
-            return NotFound(result.Error);
+            return HandleFailure(result);
         }
 
         return Ok(result.Value);
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllDoctors()
+    public async Task<IActionResult> GetAllDoctors(CancellationToken cancellationToken)
     {
-        var result = await _sender.Send(new GetAllDoctorsQuery());
+        var query = new GetAllDoctorsQuery();
+        var result = await _sender.Send(query, cancellationToken);
 
         if (result.IsFailure)
         {
-             return BadRequest(result.Error);
+            return HandleFailure(result);
         }
 
         return Ok(result.Value);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateDoctor([FromBody] CreateDoctorCommand command, CancellationToken cancellationToken)
+    {
+        var result = await _sender.Send(command, cancellationToken);
+
+        if (result.IsFailure)
+        {
+            return HandleFailure(result);
+        }
+
+        return CreatedAtAction(nameof(GetDoctor), new { id = result.Value }, result.Value);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateDoctor(Guid id, [FromBody] UpdateDoctorCommand command, CancellationToken cancellationToken)
+    {
+        if (command.Id != id)
+        {
+            return BadRequest("The ID in the URL does not match the ID in the body.");
+        }
+
+        var result = await _sender.Send(command, cancellationToken);
+
+        if (result.IsFailure)
+        {
+            return HandleFailure(result);
+        }
+
+        return NoContent();
     }
 }

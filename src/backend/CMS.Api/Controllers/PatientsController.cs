@@ -7,72 +7,68 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-public class PatientsController : ControllerBase
+public class PatientsController : ApiController
 {
-    private readonly ISender _sender;
-
-    public PatientsController(ISender sender)
+    public PatientsController(ISender sender) : base(sender)
     {
-        _sender = sender;
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> CreatePatient([FromBody] CreatePatientCommand command)
-    {
-        var result = await _sender.Send(command);
-
-        if (result.IsFailure)
-        {
-            return BadRequest(result.Error);
-        }
-
-        return CreatedAtAction(nameof(GetPatient), new { id = result.Value }, result.Value);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdatePatient(Guid id, [FromBody] UpdatePatientCommand command)
-    {
-        if (id != command.Id)
-        {
-            return BadRequest("The ID in the URL does not match the ID in the body.");
-        }
-
-        var result = await _sender.Send(command);
-
-        if (result.IsFailure)
-        {
-            return BadRequest(result.Error);
-        }
-
-        return NoContent();
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetPatient(Guid id)
+    public async Task<IActionResult> GetPatient(Guid id, CancellationToken cancellationToken)
     {
         var query = new GetPatientByIdQuery(id);
-        var result = await _sender.Send(query);
+        var result = await _sender.Send(query, cancellationToken);
 
         if (result.IsFailure)
         {
-            return NotFound(result.Error);
+            return HandleFailure(result);
         }
 
         return Ok(result.Value);
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllPatients()
+    public async Task<IActionResult> GetAllPatients(CancellationToken cancellationToken)
     {
-        var result = await _sender.Send(new GetAllPatientsQuery());
+        var query = new GetAllPatientsQuery();
+        var result = await _sender.Send(query, cancellationToken);
 
         if (result.IsFailure)
         {
-             return BadRequest(result.Error);
+            return HandleFailure(result);
         }
 
         return Ok(result.Value);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreatePatient([FromBody] CreatePatientCommand command, CancellationToken cancellationToken)
+    {
+        var result = await _sender.Send(command, cancellationToken);
+
+        if (result.IsFailure)
+        {
+            return HandleFailure(result);
+        }
+
+        return CreatedAtAction(nameof(GetPatient), new { id = result.Value }, result.Value);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdatePatient(Guid id, [FromBody] UpdatePatientCommand command, CancellationToken cancellationToken)
+    {
+        if (command.Id != id)
+        {
+            return BadRequest("The ID in the URL does not match the ID in the body."); 
+        }
+
+        var result = await _sender.Send(command, cancellationToken);
+
+        if (result.IsFailure)
+        {
+            return HandleFailure(result);
+        }
+
+        return NoContent();
     }
 }
