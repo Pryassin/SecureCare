@@ -3,6 +3,7 @@ using CMS.Application.Doctors.Commands.UpdateDoctor;
 using CMS.Application.Doctors.Queries.GetAllDoctors;
 using CMS.Application.Doctors.Queries.GetDoctorById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
@@ -41,6 +42,7 @@ public class DoctorsController : ApiController
         return Ok(result.Value);
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<IActionResult> CreateDoctor([FromBody] CreateDoctorCommand command, CancellationToken cancellationToken)
     {
@@ -54,6 +56,7 @@ public class DoctorsController : ApiController
         return CreatedAtAction(nameof(GetDoctor), new { id = result.Value }, result.Value);
     }
 
+    [Authorize(Roles = "Admin,Doctor")]
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateDoctor(Guid id, [FromBody] UpdateDoctorCommand command, CancellationToken cancellationToken)
     {

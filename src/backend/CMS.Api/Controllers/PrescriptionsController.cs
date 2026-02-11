@@ -1,6 +1,7 @@
 using CMS.Application.Prescriptions.Commands.CreatePrescription;
 using CMS.Application.Prescriptions.Queries.GetPrescriptionById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
@@ -11,6 +12,7 @@ public class PrescriptionsController : ApiController
     {
     }
 
+    [Authorize(Roles = "Admin,Doctor,Patient")]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetPrescription(Guid id, CancellationToken cancellationToken)
     {
@@ -25,6 +27,7 @@ public class PrescriptionsController : ApiController
         return Ok(result.Value);
     }
 
+    [Authorize(Roles = "Doctor")]
     [HttpPost]
     public async Task<IActionResult> CreatePrescription([FromBody] CreatePrescriptionCommand command, CancellationToken cancellationToken)
     {

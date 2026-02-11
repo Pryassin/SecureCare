@@ -1,6 +1,7 @@
 using CMS.Application.Users.Commands.Login;
 using CMS.Application.Users.Commands.RegisterUser;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
@@ -11,6 +12,7 @@ public class UsersController : ApiController
     {
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegisterUserCommand command, CancellationToken cancellationToken)
     {
@@ -26,6 +28,7 @@ public class UsersController : ApiController
         return Ok(result.Value);
     }
 
+    [AllowAnonymous]
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginCommand command, CancellationToken cancellationToken)
     {

@@ -2,6 +2,7 @@ using CMS.Application.Appointments.Commands.CancelAppointment;
 using CMS.Application.Appointments.Commands.CreateAppointment;
 using CMS.Application.Appointments.Queries.GetAppointmentById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
@@ -26,6 +27,7 @@ public class AppointmentsController : ApiController
         return Ok(result.Value);
     }
 
+    [Authorize(Roles = "Admin,Receptionist,Patient")]
     [HttpPost]
     public async Task<IActionResult> CreateAppointment([FromBody] CreateAppointmentCommand command, CancellationToken cancellationToken)
     {
@@ -39,6 +41,7 @@ public class AppointmentsController : ApiController
         return CreatedAtAction(nameof(GetAppointment), new { id = result.Value }, result.Value);
     }
 
+    [Authorize(Roles = "Admin,Receptionist,Patient")]
     [HttpDelete("{id}")]
     public async Task<IActionResult> CancelAppointment(Guid id, CancellationToken cancellationToken)
     {

@@ -3,6 +3,7 @@ using CMS.Application.Patients.Commands.UpdatePatient;
 using CMS.Application.Patients.Queries.GetAllPatients;
 using CMS.Application.Patients.Queries.GetPatientById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
@@ -13,6 +14,7 @@ public class PatientsController : ApiController
     {
     }
 
+    [Authorize(Roles = "Admin,Receptionist,Doctor,Patient")]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetPatient(Guid id, CancellationToken cancellationToken)
     {
@@ -27,6 +29,7 @@ public class PatientsController : ApiController
         return Ok(result.Value);
     }
 
+    [Authorize(Roles = "Admin,Receptionist,Doctor")]
     [HttpGet]
     public async Task<IActionResult> GetAllPatients(CancellationToken cancellationToken)
     {
@@ -41,6 +44,7 @@ public class PatientsController : ApiController
         return Ok(result.Value);
     }
 
+    [Authorize(Roles = "Admin,Receptionist")]
     [HttpPost]
     public async Task<IActionResult> CreatePatient([FromBody] CreatePatientCommand command, CancellationToken cancellationToken)
     {
@@ -54,6 +58,7 @@ public class PatientsController : ApiController
         return CreatedAtAction(nameof(GetPatient), new { id = result.Value }, result.Value);
     }
 
+    [Authorize(Roles = "Admin,Receptionist,Patient")]
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdatePatient(Guid id, [FromBody] UpdatePatientCommand command, CancellationToken cancellationToken)
     {

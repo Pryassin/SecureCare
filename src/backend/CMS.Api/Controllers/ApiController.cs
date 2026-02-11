@@ -1,10 +1,12 @@
 using CMS.Domain.Common;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Api.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
 public abstract class ApiController : ControllerBase
 {
